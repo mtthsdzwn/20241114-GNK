@@ -1,0 +1,158 @@
+---
+title: "Impact van onderzoek"
+subtitle: "Ondersteuning door<br>Team Research Intelligence"
+author:
+  - name: Matthijs de Zwaan
+    # orcid: 0000-0002-6983-2118
+    email: researchintelligence.ub@vu.nl
+    affiliation: 
+      - name: Universiteitsbibliotheek
+        url: https://vu.nl/nl/over-de-vu/diensten/universiteitsbibliotheek/meer-over/team-research-intelligence-maakt-impact-inzichtelijk
+lang: nl
+date: "2024-11-14"
+date-format: "D MMMM YYYY"
+venue: "FBC Geneeskunde"
+format: 
+  revealjs:
+    slide-number: true
+    show-slide-number: print
+    theme: [simple, "stylefiles/VU-revealjs.scss"]
+    template-partials:
+      - "stylefiles/title-slide.html"
+    preview-links: auto
+    callout-icon: false
+    center: false
+    scrollable: true
+---
+
+## Onderzoeksimpact:<br>De rol van de UB
+
+::: { .callout-note }
+## Informatievoorziening
+- Pure voor registratie
+- Toegang tot meta-data en afgeleide indicatoren
+- Advies over verantwoorde indicatoren
+:::
+
+:::: { .fragment fragment-index=4 .fade-out }
+
+::: { .fragment fragment-index=2 .absolute top="85%" left="5%" }
+Research Portal: <https://research.vu.nl/>
+:::
+
+![](img/rp-sdg.png){.fragment .shadow fragment-index=2 .absolute top="5%" left="10%" width="50%"}
+![](img/rp-altmetric.png){.fragment fragment-index=3 .shadow .absolute top="20%" left="20%" width="75%"}
+::::
+
+:::: {.fragment fragment-index=4}
+::: {.callout-note}
+## Meer actieve ondersteuning
+- Analyse en interpretatie
+- Focus op strategische beslissingen
+<!-- - 🎉 Team Research Intelligence 🎉 -->
+:::
+::::
+
+## Wat voor ondersteuning?
+
+::: {.callout-note}
+## We ondersteunen door &#8230;
+- Gegevens binnen te halen<br>&emsp;&emsp;*voor afdeling, faculteit*
+- Koppeling te maken met meta-data en indicatoren<br>&emsp;&emsp;*citaties, aandacht van media, impact op beleid, SDGs*
+- Inzicht te geven om besluitvorming te verbeteren<br>&emsp;&emsp;*visualisaties, interactieve dashboards*
+:::
+
+::::: {.callout-note icon=false}
+## Hoe wordt dit gebruikt?
+
+:::: {.columns}
+
+::: {.column width="40%"}
+- *Strategy Evaluation Protocol*
+- Zelf-evaluaties
+:::
+::: {.column width="50%"}
+- Mogelijkheden voor samenwerking
+- Verkenning voor benoemingen
+:::
+
+::: {.column width="10%"}
+
+- &#8230;
+:::
+::::
+:::::
+
+::: {.notes}
+Goal of the slide: 
+Pitch what RI does 
+:::
+
+## Ondersteuning ACS
+
+<iframe title="ACS dashboard" width="1050" height="540"  frameborder="0" allowFullScreen="true" src="https://app.powerbi.com/view?r=eyJrIjoiMmM0YzQ0ZWUtODdlOS00ZmNkLTg3NzYtMDM2ZDJkYWM0NjU1IiwidCI6IjQ2MmE5YzljLTJkYTYtNGJmYi1iMzE4LTBmODMwNDNmZTQ5YiIsImMiOjh9&pageName=ReportSection39deada3246d11d7624d">
+</iframe>
+
+
+## Ontwikkelingen
+
+::: {.callout-note}
+## Nieuwe indicatoren
+- Voor Erkennen en Waarderen
+- Voor Open science
+- Voor evaluatie en monitoring
+:::
+
+::: {.callout-note}
+## Nieuwe databronnen
+- Open Research *Information*
+- &emsp;&emsp;&#8618; Open Research *Assessment*
+:::
+
+## Open research information
+
+::: {.callout-note}
+## Context
+- UB belangrijke rol in OS beweging
+- Beschikbaarheid open data
+- Nationale en internationale initiatieven
+:::
+
+::: {.fragment fragment-index=1 .absolute top="5%" left="10%" width="75%" height="auto"} 
+[![](img/openaire.png)](https://netherlands.openaire.eu/)
+:::
+
+::: {.fragment fragment-index=2 .shadow .absolute top="40%" left="25%" width="65%" height="auto"}
+[![](img/openalex.png)](https://openalex.org/works?page=1&filter=authorships.institutions.lineage%3Ai865915315,publication_year%3A2020-2023)
+:::
+
+## Nieuwe indicatoren
+
+::: {.callout-note}
+## E&W: Nieuwe verwachtingen, nieuwe evaluaties
+- Meer dan 'publicaties tellen'
+- Meer nadruk op andere vormen van output en impact
+- Nieuwe indicatoren nodig
+:::
+
+## Open RI Tools:<br/>Samenwerking met mondiale zuiden
+
+![](img/tools-globalsouth.png)
+
+## Open RI Tools:<br/>Citaties in klinische trials
+
+[![](img/tools-clintrials.png)](https://ubvu.github.io/open-ri-tools/clinical_trials.html)
+
+## Samenwerkingen met onderzoekers
+
+::: { .callout-note }
+## Klinische relevantie
+Machine learning tool om publicaties te classificeren<br/>voor mate van klinische toepasbaarheid
+:::
+
+::: { .callout-note }
+## Geautomatiseerde onderwerpsclassificatie
+Machine learning tool om geautomatiseerd *keywords*<br>te zoeken bij publicaties
+:::
+
+## &nbsp;
