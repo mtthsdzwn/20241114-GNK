@@ -1,0 +1,17 @@
+---
+title: ""
+subtitle: ""
+author: "[researchintelligence.ub@vu.nl](mailto:researchintelligence.ub@vu.nl)"
+lang: nl
+date: "dd-mm-YYYY"
+date-format: "D MMMM YYYY"
+format: 
+  revealjs:
+    slide-number: true
+    theme: [simple, "stylefiles/VU-revealjs.scss"]
+    template-partials:
+      - "stylefiles/title-slide.html"
+    preview-links: auto
+    callout-icon: false
+    center: false
+---
