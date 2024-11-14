@@ -7,7 +7,10 @@
 <link href="20241114-GNK_files/libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="20241114-GNK_files/libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="20241114-GNK_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="20241114-GNK_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<link href="20241114-GNK_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="20241114-GNK_files/libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="20241114-GNK_files/libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="20241114-GNK_files/libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.5.57">
 
   <meta name="author" content="Matthijs de Zwaan">
@@ -444,8 +447,14 @@ Matthijs de Zwaan
 </section>
 <section id="ondersteuning-acs" class="slide level2">
 <h2>Ondersteuning ACS</h2>
-<iframe title="ACS dashboard" width="1050" height="540" frameborder="0" allowfullscreen="true" src="https://app.powerbi.com/view?r=eyJrIjoiMmM0YzQ0ZWUtODdlOS00ZmNkLTg3NzYtMDM2ZDJkYWM0NjU1IiwidCI6IjQ2MmE5YzljLTJkYTYtNGJmYi1iMzE4LTBmODMwNDNmZTQ5YiIsImMiOjh9&amp;pageName=ReportSection39deada3246d11d7624d">
-</iframe>
+<!-- <iframe title="ACS dashboard" width="1050" height="540"  frameborder="0" allowFullScreen="true" src="https://app.powerbi.com/view?r=eyJrIjoiMmM0YzQ0ZWUtODdlOS00ZmNkLTg3NzYtMDM2ZDJkYWM0NjU1IiwidCI6IjQ2MmE5YzljLTJkYTYtNGJmYi1iMzE4LTBmODMwNDNmZTQ5YiIsImMiOjh9&pageName=ReportSection39deada3246d11d7624d">
+</iframe> -->
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="img/db-screen.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Dashboard screenshot"><img data-src="img/db-screen.png" alt="Dashboard screenshot"></a></p>
+<figcaption>Dashboard screenshot</figcaption>
+</figure>
+</div>
 </section>
 <section id="ontwikkelingen" class="slide level2">
 <h2>Ontwikkelingen</h2>
@@ -953,6 +962,38 @@ Matthijs de Zwaan
       }
     });
     </script>
+    <script>var lightboxQuarto = GLightbox({"openEffect":"zoom","descPosition":"bottom","loop":false,"selector":".lightbox","closeEffect":"zoom"});
+    (function() {
+      let previousOnload = window.onload;
+      window.onload = () => {
+        if (previousOnload) {
+          previousOnload();
+        }
+        lightboxQuarto.on('slide_before_load', (data) => {
+          const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+          const href = trigger.getAttribute('href');
+          if (href !== null) {
+            const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+            if (imgEl !== null) {
+              const srcAttr = imgEl.getAttribute("src");
+              if (srcAttr && srcAttr.startsWith("data:")) {
+                slideConfig.href = srcAttr;
+              }
+            }
+          } 
+        });
+      
+        lightboxQuarto.on('slide_after_load', (data) => {
+          const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(slideNode);
+          }
+        });
+      
+      };
+      
+    })();
+              </script>
     
 
 </body></html>
